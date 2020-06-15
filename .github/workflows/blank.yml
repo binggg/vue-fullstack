@@ -26,5 +26,5 @@ jobs:
     - name: Deploy to CloudBase
       run: |
         npm i @cloudbase/cli@beta -g
-        tcb login --apiKeyId ${{secrets.SECRETID}}  --apiKey ${{secrets.SECRETKEY}} 
+        npx tcb login --apiKeyId ${{secrets.SECRETID}}  --apiKey ${{secrets.SECRETKEY}} 
         npm run deploy  
