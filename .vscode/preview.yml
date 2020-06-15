@@ -1,7 +1,7 @@
 autoOpen: true
 apps:
   - port: 5000
-    run: "npm run install && npm run dev"
+    run: "npm install && npm run dev"
     root: ./
     name: dev
     description: 本地开发
