@@ -25,6 +25,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Deploy to CloudBase
       run: |
-        npm i @cloudbase/cli@beta 
+        npm i @cloudbase/cli@latest
         npx tcb login --apiKeyId ${{secrets.SECRETID}}  --apiKey ${{secrets.SECRETKEY}} 
         npm run deploy  
